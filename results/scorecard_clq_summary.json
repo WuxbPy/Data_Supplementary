@@ -1,0 +1,25 @@
+{
+  "b_km": 150.0,
+  "n_points": 4785,
+  "kappa_threshold": 30.0,
+  "kappa_bound": 0.015,
+  "n_pairs": 18,
+  "sig_global": 15,
+  "sig_first_order": 3,
+  "n_pairs_kappa30": 5,
+  "sig_global_kappa30": 5,
+  "sig_first_order_kappa30": 0,
+  "clq2_range_all": [
+    0.8166620180517026,
+    1.0632141199165426
+  ],
+  "clq2_range_kappa30": [
+    0.9862970367287711,
+    1.0061366410609267
+  ],
+  "first_order_estimator": "grid",
+  "corr2_clq_clq1": 0.9636040271741501,
+  "slope_clq_on_clq1": 0.9735763766373987,
+  "max_abs_dev_clq_clq1": 0.16059268876657173,
+  "elapsed_sec": 197.7
+}

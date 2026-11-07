@@ -1,0 +1,232 @@
+{
+  "n_periods": 30,
+  "year_range": [
+    1996,
+    2025
+  ],
+  "n_institutions_total": 174479,
+  "n_cells": 457,
+  "cell_km": 120.0,
+  "b_km": 150.0,
+  "scale_mult": 1.0,
+  "post_year": 2012,
+  "did": [
+    {
+      "coef": 0.06027556717142766,
+      "se": 0.011298888021975716,
+      "t": 5.334645945175755,
+      "p": 9.573116388494896e-08,
+      "outcome": "log1p(n_forprofit)",
+      "design": "TWFE",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.006341540145959626,
+      "se": 0.006812185013880815,
+      "t": 0.9309113203822001,
+      "p": 0.35189943821316616,
+      "outcome": "log1p(n_public)",
+      "design": "TWFE",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.04212972236434784,
+      "se": 0.010912265273208223,
+      "t": 3.8607677974787387,
+      "p": 0.00011303128214557034,
+      "outcome": "log1p(n_nonprofit)",
+      "design": "TWFE",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.005016727069334886,
+      "se": 0.0052005229174951935,
+      "t": 0.9646581985934538,
+      "p": 0.3347160389156332,
+      "outcome": "fp_share",
+      "design": "TWFE",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.09957380884750239,
+      "se": 0.013348642767761506,
+      "t": 7.459470642812053,
+      "p": 8.681944052568724e-14,
+      "outcome": "placebo_log1p(n_fp)@1999",
+      "design": "placebo",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.10985152900248944,
+      "se": 0.012717212790843284,
+      "t": 8.638019258558396,
+      "p": 0.0,
+      "outcome": "placebo_log1p(n_fp)@2002",
+      "design": "placebo",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": 0.10916975950739947,
+      "se": 0.012314489877230616,
+      "t": 8.86514671705999,
+      "p": 0.0,
+      "outcome": "placebo_log1p(n_fp)@2005",
+      "design": "placebo",
+      "n_obs": NaN,
+      "n_cell_trends": NaN
+    },
+    {
+      "coef": -0.001409841685139697,
+      "se": 0.008703743383382126,
+      "t": -0.1619810721707947,
+      "p": 0.8713207592384999,
+      "outcome": "log1p(n_forprofit)",
+      "design": "TWFE_cell_trends",
+      "n_obs": 13235.0,
+      "n_cell_trends": 456.0
+    },
+    {
+      "coef": 0.1289233690619308,
+      "se": 0.01163590223945349,
+      "t": 11.079791356857086,
+      "p": 0.0,
+      "outcome": "placebo_log1p(n_fp)@2005",
+      "design": "TWFE_cell_trends_placebo",
+      "n_obs": 13235.0,
+      "n_cell_trends": 456.0
+    }
+  ],
+  "did_beta_log1p_nfp": 0.06027556717142766,
+  "placebo_max_abs_beta": 0.10985152900248944,
+  "did_pass_placebo": false,
+  "twfe_cell_trends_beta": -0.001409841685139697,
+  "clq2_stability": {
+    "Private for-profit->Private for-profit": {
+      "clq2_mean": 0.9926123322127892,
+      "clq2_sd": 0.0012568111419443736,
+      "clq2_min": 0.9908333555916448,
+      "clq2_max": 0.9950233998148298,
+      "kappa_min": 35.0
+    },
+    "Private for-profit->Private nonprofit": {
+      "clq2_mean": 1.0065413233151101,
+      "clq2_sd": 0.00038307195261196047,
+      "clq2_min": 1.0059652878747898,
+      "clq2_max": 1.0072767014766753,
+      "kappa_min": 26.0
+    },
+    "Private for-profit->Public": {
+      "clq2_mean": 1.0016519544222107,
+      "clq2_sd": 0.0005457388370053098,
+      "clq2_min": 1.0007003891539776,
+      "clq2_max": 1.0030931671872225,
+      "kappa_min": 27.0
+    },
+    "Private nonprofit->Private nonprofit": {
+      "clq2_mean": 0.9949825857372364,
+      "clq2_sd": 0.0004924907770267378,
+      "clq2_min": 0.9937872594201791,
+      "clq2_max": 0.9957604294924673,
+      "kappa_min": 35.0
+    },
+    "Private nonprofit->Public": {
+      "clq2_mean": 1.0004286819677553,
+      "clq2_sd": 0.0005571088893100557,
+      "clq2_min": 0.9994223169205145,
+      "clq2_max": 1.0017167488317478,
+      "kappa_min": 35.0
+    },
+    "Public->Public": {
+      "clq2_mean": 0.9849550681267321,
+      "clq2_sd": 0.00035634888505194946,
+      "clq2_min": 0.9837866794704282,
+      "clq2_max": 0.9857355279077669,
+      "kappa_min": 25.0
+    }
+  },
+  "break_tests": [
+    {
+      "src": "Private for-profit",
+      "tgt": "Private for-profit",
+      "coef": 0.0011577273631694393,
+      "se": 0.00041105726574933827,
+      "t": 2.816462472835643,
+      "p": 0.004855571515837598,
+      "level_pre": 0.9920720594433104,
+      "level_post": 0.9932297868064792
+    },
+    {
+      "src": "Private for-profit",
+      "tgt": "Private nonprofit",
+      "coef": -0.00025920433729828985,
+      "se": 0.00013187066151033191,
+      "t": -1.9655951849303606,
+      "p": 0.04934539075915789,
+      "level_pre": 1.0066622853391827,
+      "level_post": 1.0064030810018842
+    },
+    {
+      "src": "Private for-profit",
+      "tgt": "Public",
+      "coef": 0.0002541261385479328,
+      "se": 0.00020577737953139267,
+      "t": 1.2349566270434706,
+      "p": 0.2168466466962664,
+      "level_pre": 1.0015333622242215,
+      "level_post": 1.001787488362769
+    },
+    {
+      "src": "Private nonprofit",
+      "tgt": "Private nonprofit",
+      "coef": -8.02701419607633e-05,
+      "se": 0.00018929060211149345,
+      "t": -0.4240577242893635,
+      "p": 0.6715237158692449,
+      "level_pre": 0.9950200451368187,
+      "level_post": 0.994939774994857
+    },
+    {
+      "src": "Private nonprofit",
+      "tgt": "Public",
+      "coef": 7.283630814737603e-05,
+      "se": 0.00020847404154104146,
+      "t": 0.3493783092080413,
+      "p": 0.7268053153198479,
+      "level_pre": 1.00039469169062,
+      "level_post": 1.000467527998767
+    },
+    {
+      "src": "Public",
+      "tgt": "Public",
+      "coef": 0.00012765163113625272,
+      "se": 0.00012742381902529812,
+      "t": 1.0017878298790384,
+      "p": 0.316446076299866,
+      "level_pre": 0.984895497365535,
+      "level_post": 0.9850231489966712
+    }
+  ],
+  "type_counts_1996": {
+    "Private for-profit": 1856,
+    "Public": 1819,
+    "Private nonprofit": 1738
+  },
+  "type_counts_2012": {
+    "Private for-profit": 2781,
+    "Public": 1885,
+    "Private nonprofit": 1757
+  },
+  "type_counts_2025": {
+    "Private for-profit": 2151,
+    "Public": 1920,
+    "Private nonprofit": 1765
+  },
+  "forprofit_change_2012_2025_pct": -22.653721682847895,
+  "elapsed_sec": 66.3
+}

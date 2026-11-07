@@ -1,0 +1,5 @@
+﻿region,span_km,has_interior_max,argmax_b,argmax_is_boundary,monotone_dec,monotone_inc,n_interior_extrema,clq_at_1pct_of_span,clq_at_5pct_of_span
+REGION=5(n=1224),1773.5578101838128,False,5.0,True,False,False,2,1.1141460922691802,1.1001263267148775
+REGION=2(n=825),765.2099303159239,False,5.0,True,True,False,0,1.2144390484395642,1.1143399068753785
+REGION=3(n=695),1100.8189171152653,False,5.0,True,True,False,0,1.3242191882446488,1.084436716054323
+REGION=8(n=670),1873.0768055835224,False,5.0,True,True,False,0,1.2336784666642835,1.1123654894191786
